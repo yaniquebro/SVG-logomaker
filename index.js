@@ -34,15 +34,15 @@ inquirer
     ])
     .then((response) => {
         if (response.shape === 'Square') {
-            const square = new Square(response.characters, response.shapeColor, response.textColor)
-            fs.writeFile('./examples/logo.svg', square.render(), (error) => {
+            const squareShape = new Square(response.characters, response.shapeColor, response.textColor)
+            fs.writeFile('./examples/logo.svg', squareShape.render(), (error) => {
                 if (error) {
                     console.error(error);
                 }
             });
         } else if (response.shape === 'Circle') {
-            const circle = new Circle(response.characters, response.shapeColor, response.textColor)
-            fs.writeFile('./examples/logo.svg', circle.render(), (error) => {
+            const circleShape = new Circle(response.characters, response.shapeColor, response.textColor)
+            fs.writeFile('./examples/logo.svg', circleShape.render(), (error) => {
                 if (error) {
                     console.error(error);
                 }
@@ -56,6 +56,7 @@ inquirer
             })
         }
     })
+    
     .then(() => {
         return console.log("Generated logo.svg")
     })
