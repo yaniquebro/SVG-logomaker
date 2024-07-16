@@ -27,7 +27,7 @@ To test the application, type `npm test` in the terminal.
 
 ## License
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://opensource.org/licenses/MIT)
 This application was covered under the MIT license.
 
 ## Tests
